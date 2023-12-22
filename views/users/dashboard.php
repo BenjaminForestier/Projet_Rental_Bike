@@ -4,7 +4,7 @@
     <h2 class="text-center my-4">Dashboard</h2>    
     <h5 class="text-center my-4">Gestions des utilisateurs </h5>  
     <h3 class="text-center">Bonjour <?= $user_connected_info-> lastname . ' '.$user_connected_info -> firstname ?>,</h3>  
-    <div class="dashboard_head">
+    <div class="dashboard_head my-4">
         <div class="row d-flex justify-content-around text-center align-content-cneter">
             <div class="col-md-2"><a class="btn btn-outline-success" href="?path=users.create">Ajouter un utilisateur</a></div>
             <div class="col-md-3"><a  class="btn btn-outline-success"  href="?path=reservations.index">Gestion des reservations</a></div>
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <table class="table table-striped table-hover text-center w-75 mx-auto">
+    <table class="table table-striped table-hover rounded table-bordered text-center w-100 mx-auto my-4">
         <thead>
             <tr>
                 <th><h6>Nom - Prénom</h6></th>
