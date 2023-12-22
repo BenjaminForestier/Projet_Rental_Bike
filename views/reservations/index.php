@@ -1,17 +1,17 @@
 <?php
 ob_start();
 ?>
-<div>
+<div class="container">
     <nav class="navigation d-flex justify-content-between py-4">
         <button class="navigation__left btn btn-success">
-            <a class="btn btn-success" href="?path=bikes.create">
+            <a href="?path=bikes.create" class="btn btn-success">
                 Enregistrement des vélos
             </a>
         </button>
         <h1 class="navigation__center">Gestion des réservations</h1>
         <div class="navigation__right" id="">
-            <button class="btn btn-success">ID : <?= 'XXXXXXX' ?></button>
-            <button class="btn btn-outline-danger" type="submit">Déconnexion</button>
+            <button class="btn btn-success">ID : <?= $_SESSION["user_id"] ?></button>
+            <a href="?path=deconnection">Déconnexion</a>
         </div>
     </nav>
     <div class="border p-2 shadow">
