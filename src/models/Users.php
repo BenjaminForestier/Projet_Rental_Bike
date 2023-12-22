@@ -4,9 +4,6 @@ namespace App\models;
 use PDO;
 use Exception;
 
-/**
- * Student
- */
 class Users {
     private PDO $db;
     public function __construct(
