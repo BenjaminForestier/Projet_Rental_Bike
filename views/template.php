@@ -3,7 +3,7 @@
 ?>
 
 <!doctype html>
-<html lang="fr" data-bs-theme="dark">
+<html lang="fr" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
         <header class="container header">
                 <nav class="navigation">
                         <div class="navigation__left">
-                            <a href=""><img src="" alt="" srcset="">logo</a>
+                            <a href="?path=/"><img width="100vw" src="./assets/img/logo_rental_bike.png" alt="logo_rental_bike" srcset=""></a>
                         </div>
                         <div class="navigation__center">
                             <a href="?path=/"  rel="noopener noreferrer">Home</a>
@@ -52,7 +52,7 @@
         <div class="columns_footer">
                 <div class="footer__left">
                     <div class="logo_footer">
-                        <img src="" alt="logo" srcset="">
+                        <img width="200vw" src="./assets/img/logo_dark-theme_rental_bike.png" alt="logo_dark-theme_rental_bike" srcset="">
                     </div>
                 </div>
                 <div class="footer__center">
@@ -76,7 +76,7 @@
         </div> -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script> --
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

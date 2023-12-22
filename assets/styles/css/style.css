@@ -29,7 +29,7 @@ header .navigation a {
 }
 header .navigation__center a {
   margin: 0 1vw;
-  color: white;
+  color: #000;
   font-weight: 400;
 }
 header .navigation__center a:hover {
@@ -65,6 +65,7 @@ header .navigation .btn_primary a {
 
 footer {
   background-color: #82B479;
+  color: #fff;
   margin-top: 5vh;
   padding: 3vh 0;
 }
