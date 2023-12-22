@@ -1,15 +1,15 @@
 <?php ob_start();
 ?>
 <div>
-    <nav class="navigation d-flex justify-content-between py-4">
+    <nav class="navigation d-flex justify-content-between py-3">
         <button class="navigation__left btn btn-success">
-            <a href="?path=users.dashboard">
+            <a class="btn btn-success" href="?path=users.dashboard">
                 Gestion des utilisateur
             </a>
         </button>
         <h1 class="navigation__center">Ajout d'un utilisateur</h1>
         <div class="navigation__right" id="">
-            <button class="btn btn-success">ID : <?= 'XXXXXXX' ?></button>
+            <button class="btn btn-success">ID : XXXXXXX</button>
             <button class="btn btn-outline-danger" type="submit">Déconnexion</button>
         </div>
     </nav>
