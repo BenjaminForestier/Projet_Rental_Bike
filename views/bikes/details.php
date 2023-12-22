@@ -4,7 +4,7 @@
 <div class="bikes_details mt-5">
     <h3 class="bikes__title text-center mb-5">Vélo <?= $bike->bike_id ?></h3>
     <div class="card mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="<?= $bike->photo?>" alt="Card image cap">
+        <img class="card-img-top" src="./assets/img/<?= $bike->photo?>" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Registration number : <?= $bike->registration_number?></h5>
             <p class="card-text"><?= $bike->description ?></p>
@@ -15,7 +15,7 @@
                 <?php } else { 
                     echo "Désolé, tu dois être connecté pour réserver.";
                 }?> -->
-            <a href="index.php">Retour</a>
+            <a href="index.php" class="btn btn-success">Retour</a>
         </div>
     </div>
 </div>
@@ -30,15 +30,15 @@
         </select> -->
         <?php if(isset($_SESSION["user_id"]) && $bike->availability===1) { ?>
             <h2>Réserver un vélo</h2>
-            <form action="?path=reservations.create" method="post">
-                <input type="hidden" name="bike_id" value="<?= $bike->bike_id ?>">
-                <input type="hidden" name="user_id" value="<?= $_SESSION['user_id'] ?>">
+            <form action="?path=reservations.create" method="post" >
+                <input type="hidden" name="bike_id" value="<?= $bike->bike_id ?>" class="form-control">
+                <input type="hidden" name="user_id" value="<?= $_SESSION['user_id'] ?>" class="form-control" required>
                 <label for="start_date">Date de début :</label>
-                <input type="date" id="start_date" name="start_date" required>
+                <input type="date" id="start_date" name="start_date"class="form-control"  required>
         
                 <label for="end_date">Date de fin :</label>
-                <input type="date" id="end_date" name="end_date" required>
-                    <button type="submit">Réserver</button>
+                <input type="date" id="end_date" name="end_date" class="form-control" required>
+                    <button type="submit" class="btn btn-success wmx-auto">Réserver</button>
                 <?php } elseif(!isset($_SESSION["user_id"])) { ?>
                     <p>Désolé, tu dois être connecté pour réserver.</p>
                 <?php } else { ?>

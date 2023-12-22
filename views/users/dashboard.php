@@ -9,17 +9,18 @@
             <div class="col-md-2"><a class="btn btn-outline-success" href="?path=users.create">Ajouter un utilisateur</a></div>
             <div class="col-md-3"><a  class="btn btn-outline-success"  href="?path=reservations.index">Gestion des reservations</a></div>
             <div class="col-md-2"><a  class="btn btn-outline-success"  href="">Login : <?= $user_connected_info-> login ?></a></div>
-            <div class="col-md-2 ">  <a class="btn btn-outline-danger" href="?path=home">Deconnexion</a></div>
+            <div class="col-md-2 ">  <a class="btn btn-outline-danger" href="?path=deconnection">Déconnexion</a></div>
+            
         </div>
     </div>
 
     <table class="table table-striped table-hover rounded table-bordered text-center w-100 mx-auto my-4">
         <thead>
             <tr>
-                <th><h6>Nom - Prénom</h6></th>
-                <th> Identifiant</th>
-                <th> <h6>Modifier/supprrimer </h6> </th>
-                <th> supprrimer</th>
+                <th><h5>Nom - Prénom</h5></th>
+                <th><h5>Identifiant</h5> </th>
+                <th> <h5>Modifier </h5> </th>
+                <th> <h5>supprimer</h5></th>
             </tr>
         </thead>
         <tbody>
